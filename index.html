@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Application Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Job Application Form</h1>
+    <form id="jobApplicationForm" onsubmit="return validateForm()">
+        <div>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+        </div>
+        <div>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div>
+            <label for="position">Position Applied For:</label>
+            <select id="position" name="position" required>
+                <option value="">Select Position</option>
+                <option value="position1">Position 1</option>
+                <option value="position2">Position 2</option>
+                <option value="position3">Position 3</option>
+            </select>
+        </div>
+        <div>
+            <label>Years of Experience:</label>
+            <input type="radio" id="exp1" name="experience" value="1-3 Years" required>
+            <label for="exp1">1-3 Years</label>
+            <input type="radio" id="exp2" name="experience" value="3-5 Years">
+            <label for="exp2">3-5 Years</label>
+            <input type="radio" id="exp3" name="experience" value="5+ Years">
+            <label for="exp3">5+ Years</label>
+        </div>
+        <div>
+            <label>Skills:</label>
+            <input type="checkbox" id="skill1" name="skills" value="Skill 1">
+            <label for="skill1">Skill 1</label>
+            <input type="checkbox" id="skill2" name="skills" value="Skill 2">
+            <label for="skill2">Skill 2</label>
+            <input type="checkbox" id="skill3" name="skills" value="Skill 3">
+            <label for="skill3">Skill 3</label>
+        </div>
+        <div>
+            <label for="coverLetter">Cover Letter:</label>
+            <textarea id="coverLetter" name="coverLetter" rows="5" cols="30" required></textarea>
+        </div>
+        <div>
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume" required>
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
